@@ -1,0 +1,50 @@
+.dropdowncontainer {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownbutton {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownmenu {
+  position: absolute;
+  top: 100%; /* Adjust so the dropdown is right below the button */
+  right: 0;  /* Align to the right of the button */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 200px;
+  text-align: center;
+  padding: 5px;
+}
+
+.dropdownmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdownmenu li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdownmenu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdownmenu li:hover {
+  background-color: #f5f5f5;
+}
+
+/* Optional: Add transition for smoother dropdown opening */
+.dropdownmenu {
+  transition: all 0.3s ease-in-out;
+}
